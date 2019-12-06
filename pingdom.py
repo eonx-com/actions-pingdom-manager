@@ -334,7 +334,6 @@ class Pingdom:
                 raise Exception('Configuration Error: Invalid `pingdom.default` item type, expected YAML object')
 
         default = {
-            'auth': '',
             'url': '',
             'encryption': False,
             'port': '',

@@ -334,26 +334,27 @@ class Pingdom:
                 raise Exception('Configuration Error: Invalid `pingdom.default` item type, expected YAML object')
 
         default = {
-            'url': '',
+            'api': None,
+            'url': None,
             'encryption': False,
-            'port': '',
-            'shouldcontain': '',
-            'postdata': '',
+            'port': None,
+            'shouldcontain': None,
+            'postdata': None,
             'requestheaders': {},
-            'name': '',
-            'host': '',
+            'name': None,
+            'host': None,
             'type': 'http',
             'paused': False,
             'resolution': 5,
-            'userids': '',
+            'userids': None,
             'sendnotificationwhendown': 2,
             'notifyagainevery': 0,
             'notifywhenbackup': True,
-            'probe_filters': '',
+            'probe_filters': None,
             'ipv6': False,
-            'integrationids': '',
-            'teamids': '',
-            'custom_message': ''
+            'integrationids': None,
+            'teamids': None,
+            'custom_message': None
         }
 
         if 'default' in config_pingdom:
